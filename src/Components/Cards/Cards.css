@@ -1,0 +1,30 @@
+.menuDiv {
+  display: flex;
+  justify-content: center;
+  margin: 14% auto;
+}
+
+.menuDiv1,
+.menuDiv2 {
+  text-decoration: none;
+  border: 3px solid rgb(28, 27, 27);
+  margin: auto 20px;
+  border-radius: 8px;
+  width: 16%;
+  height: 180px;
+  background-color: rgb(28, 27, 27);
+}
+
+@media (max-width:770px) {
+  .menuDiv{
+    flex-direction: column;
+    margin: auto;
+  }
+  .menuDiv1,.menuDiv2{
+    width: 50%;
+    margin: 20px auto;
+  }
+  .menuDiv1{
+    margin-top: 50px;
+  }
+}
