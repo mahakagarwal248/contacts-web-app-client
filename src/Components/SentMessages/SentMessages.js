@@ -11,7 +11,7 @@ function SentMessages() {
   const [messageList, setMessageList] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/getSentMessages")
+      .get("https://comfortable-frog-jumpsuit.cyclic.app/getSentMessages")
       .then((res) => setMessageList(res));
   }, []);
 

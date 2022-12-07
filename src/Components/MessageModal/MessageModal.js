@@ -30,7 +30,7 @@ function MessageModal({ phone, name }) {
 
   const handleSend = async () => {
     const apiCall = await axios
-      .post("http://localhost:5000/sendMessage", {
+      .post("https://comfortable-frog-jumpsuit.cyclic.app/sendMessage", {
         phoneNumber: phone,
         message: `Hi Your code is: ${code}`,
         name: name,
